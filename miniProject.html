@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+  <body onload="showCalendarInToList(); showTheClock()">
+    <div>
+      <div id="theme-switcher">
+        <i class="fas fa-adjust"></i>
+      </div>
+    </div>
+    <div class="main">
+      <form action="" class="form" id="form-1">
+        <h1>Create random app</h1>
+        <div>
+          <label for="randomPass" id="password">Password:</label>
+          <input type="text" id="randomPass" />
+        </div>
+        <button id="generate-btn">Generate random Password</button>
+      </form>
+      <form action="" class="form" id="form-2">
+        <h1>Background Changer</h1>
+        <button class="controlTime-btn" id="change-btn">Click me</button>
+      </form>
+      <form action="" class="form" id="form-3">
+        <h1>Js Clock</h1>
+        <div id="time">Now</div>
+        <div class="clockForm">
+          <div class="hourHand">
+            <div class="hr" id="hour"></div>
+          </div>
+          <div class="minHand">
+            <div class="mn" id="min"></div>
+          </div>
+          <div class="secHand">
+            <div class="sc" id="sec"></div>
+          </div>
+
+          <!-- <img src="clock.png" alt="Can not load this image" id="clockImg" /> -->
+        </div>
+      </form>
+      <form action="" class="form" id="form-4">
+        <h1>Stop watch</h1>
+        <div>
+          <span id="runTime-min">00</span><span id="runTime-sec">00</span>
+          <div class="timeControl">
+            <button class="controlTime-btn" id="start-btn">Start</button>
+            <button class="controlTime-btn" id="stop-btn">Stop</button>
+            <button class="controlTime-btn" id="reset-btn">Reset</button>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form" id="form-5">
+        <h1>Calculator</h1>
+        <div class="cal">
+          <div class="screen">
+            <input type="text" id="input" />
+          </div>
+          <div class="keyboard">
+            <button class="ctrl-btn clear">C</button>
+            <button class="ctrl-btn operator" rule="divide">/</button>
+            <button class="ctrl-btn operator" rule="multi">*</button>
+            <button class="ctrl-btn">7</button>
+            <button class="ctrl-btn">8</button>
+            <button class="ctrl-btn">9</button>
+            <button class="ctrl-btn operator" rule="subtract">-</button>
+            <button class="ctrl-btn">4</button>
+            <button class="ctrl-btn">5</button>
+            <button class="ctrl-btn">6</button>
+            <button class="ctrl-btn operator" rule="plus">+</button>
+            <button class="ctrl-btn">3</button>
+            <button class="ctrl-btn">2</button>
+            <button class="ctrl-btn">1</button>
+            <button class="ctrl-btn">.</button>
+            <button class="ctrl-btn">0</button>
+            <button class="ctrl-btn">00</button>
+            <button class="ctrl-btn equal">=</button>
+          </div>
+        </div>
+      </form>
+      <form action="" class="form" id="form-6">
+        <h1>Todo List</h1>
+        <div class="todoList">
+          <div class="calendar">
+            <i class="fas fa-sync-alt"></i>
+            <div id="calendar"></div>
+          </div>
+          <div class="list"></div>
+          <div class="addList">
+            <i class="fas fa-plus-circle add-btn"></i>
+            <input
+              type="text"
+              class="inputList"
+              placeholder="Add what you want to do"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="JS/createRandomPassword.js"></script>
+    <script src="JS/changeColorBG.js"></script>
+    <script src="JS/JSclock.js"></script>
+    <script src="JS/stopStartTimer.js"></script>
+    <script src="JS/Calculator.js"></script>
+    <script src="JS/todoList.js"></script>
+    <script src="JS/theme.js"></script>
+  </body>
+</html>
